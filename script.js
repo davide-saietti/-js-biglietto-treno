@@ -15,6 +15,10 @@ Bonus:
 Applicare de controlli sull'input dell'utente 
 
 
+1. dichiarare le variabili e le costanti.
+2. calcolare le variabili dei prezzi finali
+3. impostare un controllo iniziale
+4. se controllo viene validato calcolare per esclusione il prezzo finale in base all'età dell'utente
 
 
 
