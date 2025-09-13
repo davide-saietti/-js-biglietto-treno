@@ -25,9 +25,11 @@ Applicare de controlli sull'input dell'utente
 
 
 */
-let age = 17;
+let agePrompt = prompt('Inserisci la tua età');
 const priceKm = 0.21;
-let km = 15;
+let kmPrompt = prompt('Inserisci i km che percorrerai');
+let age = parseInt(agePrompt)
+let km = parseInt(kmPrompt)
 let totalPrice = priceKm * km;
 let underageUserDiscount = totalPrice * 20 /100;
 let overagedUserDiscount = totalPrice * 40 / 100;
@@ -36,17 +38,18 @@ let underageUserPrice = totalPrice - underageUserDiscount;
 
 
 
+
 if(isNaN(age) || isNaN(km)){
     console.log('Write only numbers!')
 }
 else{
     if( age > 65){
-    console.log(overagedUserPrice)
+    console.log(`${overagedUserPrice.toFixed(2)}$`)
 }
 else if (age < 18){
-    console.log(underageUserPrice)
+    console.log(`${underageUserPrice.toFixed(2)}$`)
 }
 else{
-    console.log(totalPrice)
+    console.log(`${totalPrice.toFixed(2)}$`)
 }
 }
